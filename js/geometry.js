@@ -1,41 +1,73 @@
-function setTotalResualt(sideDisplayId, total){
-    const display = document.getElementById(sideDisplayId)
-    display.innerText = total ;
-}
+//triangle 
+document.getElementById('triangleBtn').addEventListener('click', function () {
+
+    const twoInputvalueSub = getElementByIdInputValueAndSideElementId('triangleFirstInput', 'triangleSecoundInput')
+
+    const getElementById = getClickAbleItemName('triangle')
+
+    const twoValueTtl = triangleRhombusPentagonTotal(getElementById, twoInputvalueSub)
 
 
-
-//ellipse
-document.getElementById('ellipseBtn').addEventListener('click', function () {
-
-    const total = ellipseRhombusPentagonTotal('ellipse','ellipseFirstInput','ellipseSecoundInput', 0.5)
-  
-    setTotalResualt('sideDisplay', total)
-  
+    setTotalResualt('sideDisplay', twoValueTtl)
 })
-
 
 //Rhombus
 document.getElementById('rhombusBtn').addEventListener('click', function () {
-    const total = ellipseRhombusPentagonTotal('rhombus','rhombusFirstInput','rhombusSecoundInput', 0.5)
-   
 
-    setTotalResualt('sideDisplay', total)
+    const twoInputvalueSub = getElementByIdInputValueAndSideElementId('rhombusFirstInput', 'rhombusSecoundInput')
 
+    const getElementById = getClickAbleItemName('rhombus')
 
+    const twoValueTtl = triangleRhombusPentagonTotal(getElementById, twoInputvalueSub)
+
+    setTotalResualt('sideDisplay', twoValueTtl)
 })
 
 //Pentagon
 document.getElementById('pentagonBtn').addEventListener('click', function () {
 
+    const twoInputvalueSub = getElementByIdInputValueAndSideElementId('pentagonFirstInput', 'pentagonSecoundInput')
 
-    const total = ellipseRhombusPentagonTotal('pentagon','pentagonFirstInput','pentagonSecoundInput', 0.5)
- 
+    const getElementById = getClickAbleItemName('pentagon')
 
-    setTotalResualt('sideDisplay', total)
+    const twoValueTtl = triangleRhombusPentagonTotal(getElementById, twoInputvalueSub)
+
+    setTotalResualt('sideDisplay', twoValueTtl)
+})
+
+
+
+
+
+
+
+
+
+
+//Rectangle
+document.getElementById('rectangleBtn').addEventListener('click', function () {
+
+
+    let twoInputvalueSub = getElementByIdInputValueAndSideElementId('rectangleFirstInput', 'rectangleSecoundInput')
+
+    let getElementById = getClickAbleItemName('rectangle')
+
+    setTotalResualt('sideDisplay', getElementById + ' ' + twoInputvalueSub)
 
 })
 
+//Parallelogram
+document.getElementById('parallelogramBtn').addEventListener('click', function () {
+
+
+
+    let twoInputvalueSub = getElementByIdInputValueAndSideElementId('parallelogramFirstInput', 'parallelogramSecoundInput')
+
+    let getElementById = getClickAbleItemName('parallelogram')
+
+    setTotalResualt('sideDisplay', getElementById + ' ' + twoInputvalueSub)
+
+})
 
 
 
