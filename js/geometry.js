@@ -7,7 +7,6 @@ document.getElementById('triangleBtn').addEventListener('click', function () {
 
     const twoValueTtl = triangleRhombusPentagonTotal(getElementById, twoInputvalueSub)
 
-
     setTotalResualt('sideDisplay', twoValueTtl)
 })
 
@@ -35,19 +34,9 @@ document.getElementById('pentagonBtn').addEventListener('click', function () {
     setTotalResualt('sideDisplay', twoValueTtl)
 })
 
-
-
-
-
-
-
-
-
-
+ 
 //Rectangle
 document.getElementById('rectangleBtn').addEventListener('click', function () {
-
-
     let twoInputvalueSub = getElementByIdInputValueAndSideElementId('rectangleFirstInput', 'rectangleSecoundInput')
 
     let getElementById = getClickAbleItemName('rectangle')
@@ -58,9 +47,6 @@ document.getElementById('rectangleBtn').addEventListener('click', function () {
 
 //Parallelogram
 document.getElementById('parallelogramBtn').addEventListener('click', function () {
-
-
-
     let twoInputvalueSub = getElementByIdInputValueAndSideElementId('parallelogramFirstInput', 'parallelogramSecoundInput')
 
     let getElementById = getClickAbleItemName('parallelogram')
@@ -68,7 +54,6 @@ document.getElementById('parallelogramBtn').addEventListener('click', function (
     setTotalResualt('sideDisplay', getElementById + ' ' + twoInputvalueSub)
 
 })
-
 
 
 
