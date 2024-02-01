@@ -1,3 +1,19 @@
+//ellipse
+document.getElementById('ellipseBtn').addEventListener('click', function(){
+
+    const twoInputvalueSub = getElementByIdInputValueAndSideElementId('ellipseFirstInput', 'ellipseSecoundInput')
+
+    const getElementById = getClickAbleItemName('ellipse')
+
+    const piNumber = 3.14;
+    const twoValueTtl = triangleRhombusPentagonTotal(getElementById, twoInputvalueSub, piNumber)
+ 
+    setTotalResualt('sideDisplay', twoValueTtl)
+     
+})
+
+
+
 //triangle 
 document.getElementById('triangleBtn').addEventListener('click', function () {
 
@@ -6,7 +22,7 @@ document.getElementById('triangleBtn').addEventListener('click', function () {
     const getElementById = getClickAbleItemName('triangle')
 
     const twoValueTtl = triangleRhombusPentagonTotal(getElementById, twoInputvalueSub)
-
+ 
     setTotalResualt('sideDisplay', twoValueTtl)
 })
 
